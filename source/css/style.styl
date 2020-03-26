@@ -1,10 +1,10 @@
 family-sans = "Ubuntu", "Roboto", "Open Sans", "Microsoft YaHei", sans-serif
 family-mono = "Source Code Pro", monospace, "Microsoft YaHei"
-gap = 64px
-screen-tablet = 769px
-screen-desktop = 1088px
-screen-widescreen = 1280px
-screen-fullhd = 1472px
+gap = 50px
+screen-tablet = 800px
+screen-desktop = 1200px
+screen-widescreen = 1400px
+screen-fullhd = 1600px
 
 /* ---------------------------------
  *       Override CSS Framework
@@ -21,15 +21,15 @@ body, button, input, select, textarea
 @media screen and (min-width: screen-widescreen)
     .is-1-column .container
     .is-2-column .container
-        max-width: screen-desktop - 2 * gap
-        width: screen-desktop - 2 * gap
+        max-width: screen-desktop - 1 * gap
+        width: screen-desktop - 1 * gap
 @media screen and (min-width: screen-fullhd)
     .is-2-column .container
-        max-width: screen-widescreen - 2 * gap
-        width: screen-widescreen - 2 * gap
+        max-width: screen-widescreen - 1 * gap
+        width: screen-widescreen - 1 * gap
     .is-1-column .container
-        max-width: screen-desktop - 2 * gap
-        width: screen-desktop - 2 * gap
+        max-width: screen-desktop - 1 * gap
+        width: screen-desktop - 1 * gap
 
 @media screen and (max-width: screen-tablet - 1)
     .section
@@ -99,7 +99,7 @@ img.thumbnail
     .navbar-item
         display: flex
         align-items: center
-        padding: 1.25rem 0.75rem
+        padding: 2.75rem 1.75rem
         &.is-active
             color: hsl(217, 71%, 53%)
             background-color: transparent
