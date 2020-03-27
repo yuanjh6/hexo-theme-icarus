@@ -58,7 +58,7 @@ module.exports = function (hexo) {
      */
     hexo.extend.helper.register('word_count', function (content) {
 	if (typeof(content) == "undefined") {
-            return ''
+            return 0
         }
         content = content.replace(/<\/?[a-z][^>]*>/gi, '');
         content = content.trim();
