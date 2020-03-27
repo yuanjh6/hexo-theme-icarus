@@ -21,15 +21,15 @@ body, button, input, select, textarea
 @media screen and (min-width: screen-widescreen)
     .is-1-column .container
     .is-2-column .container
-        max-width: screen-desktop - 1 * gap
-        width: screen-desktop - 1 * gap
+        max-width: screen-desktop - 2 * gap
+        width: screen-desktop - 2 * gap
 @media screen and (min-width: screen-fullhd)
     .is-2-column .container
-        max-width: screen-widescreen - 1 * gap
-        width: screen-widescreen - 1 * gap
+        max-width: screen-widescreen - 2 * gap
+        width: screen-widescreen - 2 * gap
     .is-1-column .container
-        max-width: screen-desktop - 1 * gap
-        width: screen-desktop - 1 * gap
+        max-width: screen-desktop - 2 * gap
+        width: screen-desktop - 2 * gap
 
 @media screen and (max-width: screen-tablet - 1)
     .section
@@ -99,8 +99,7 @@ img.thumbnail
     .navbar-item
         display: flex
         align-items: center
-        padding: 1.75rem 1.00rem
-	font-weight: 700
+        padding: 0.75rem 1.25rem
         &.is-active
             color: hsl(217, 71%, 53%)
             background-color: transparent
