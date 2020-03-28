@@ -16,6 +16,9 @@
                 <% if (busuanzi) { %>
                 <br>
                 <span id="busuanzi_container_site_uv">
+<% if (has_config('plugins.tj51la') ? get_config('plugins.tj51la') : false) { %>
+                
+<% } %>
                 <%- _p('plugin.visitor', '<span id="busuanzi_value_site_uv">0</span>') %>
                 </span>
                 <% } %>
