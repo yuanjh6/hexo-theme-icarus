@@ -65,5 +65,7 @@
 
 <% if (page.keywords){ %>
     <meta name="keywords" content="<%= page.keywords %>">
-<%} %>
+<%}else if(config.keywords){ %>
+    <meta name="keywords" content="<%= config.keywords %>">
+<%}%>
 
