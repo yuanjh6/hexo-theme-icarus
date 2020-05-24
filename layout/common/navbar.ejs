@@ -37,7 +37,10 @@
                 </a>
                 <% } %>
                 <% if (search) { %>
-<script type="text/javascript">(function(){document.write(unescape('%3Cdiv id="bdcs"%3E%3C/div%3E'));var bdcs = document.createElement('script');bdcs.type = 'text/javascript';bdcs.async = true;bdcs.src = 'https://znsv.baidu.com/customer_search/api/js?sid=15497507375013951322' + '&plate_url=' + encodeURIComponent(window.location.href) + '&t=' + Math.ceil(new Date()/3600000);var s = document.getElementsByTagName('script')[0];s.parentNode.insertBefore(bdcs, s);})();</script>
+                <a class="navbar-item search" title="<%= __('search.search') %>" href="javascript:;">
+                    <input type="text" placeholder="想要查找什么,,,"/>
+                    <i class="fas fa-search"></i>
+                </a>
                 <% } %>
             </div>
         </div>
